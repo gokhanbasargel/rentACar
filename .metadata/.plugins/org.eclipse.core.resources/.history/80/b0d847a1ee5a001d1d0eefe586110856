@@ -1,0 +1,5 @@
+package kodlama.io.rentACar.bussiness.requests;
+
+public class CreateBrandRequest {
+
+}

@@ -1,0 +1,5 @@
+package kodlama.io.rentACar.bussiness.abstracts;
+
+public interface BrandService {
+
+}

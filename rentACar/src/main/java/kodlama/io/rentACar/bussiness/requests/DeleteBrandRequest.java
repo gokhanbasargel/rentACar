@@ -1,0 +1,16 @@
+package kodlama.io.rentACar.bussiness.requests;
+
+import kodlama.io.rentACar.entities.concretes.Brand;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class DeleteBrandRequest {
+	private int id;
+	private Brand name;
+}

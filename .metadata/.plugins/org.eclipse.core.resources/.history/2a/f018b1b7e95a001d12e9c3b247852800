@@ -1,0 +1,42 @@
+package kodlama.io.rentACar.bussiness.concretes;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlama.io.rentACar.bussiness.abstracts.BrandService;
+import kodlama.io.rentACar.dataAccess.abstracts.Brandrepository;
+import kodlama.io.rentACar.entities.concretes.Brand;
+
+
+@Service // Bu sınıf bir bussiness nesnesidir.
+public class BrandManager implements BrandService{
+
+	private Brandrepository brandRepostory;
+	
+	
+	
+	
+	
+	
+	@Autowired
+	public BrandManager(Brandrepository brandRepostory) {
+		
+		this.brandRepostory = brandRepostory;
+	}
+
+
+
+
+
+
+
+	@Override
+	public List<Brand> getAll() {
+		// işkuralları
+		return brandRepostory.findAll();
+	}
+	
+
+}
